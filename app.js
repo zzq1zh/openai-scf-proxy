@@ -18,6 +18,6 @@ app.use('/', createProxyMiddleware({
   }
 }));
 
-app.listen((process.env.PORT || port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Example app listening at http://0.0.0.0:${process.env.PORT || port}`)
 })
